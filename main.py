@@ -34,4 +34,10 @@ for i in range(n):
                         a[i][j] += 1
 for i in range(n):
     for j in range(m):
-        print(a[i][j])
+        if a[i][j] == -1:
+            print('*', end = ' ')
+        elif a[i][j] == 0:
+            print('.', end = ' ')
+        else:
+            print(a[i][j], end = ' ')
+    print()
